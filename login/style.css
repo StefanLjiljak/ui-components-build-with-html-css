@@ -139,15 +139,33 @@ input:not([type='checkbox']) {
   margin: 5px 0;
 }
 
+#footer {
+  color: inherit;
+  position: fixed;
+  bottom: 0.2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   body {
     height: 100%;
+    width: 100%;
+    flex-direction: column;
   }
   .container {
     flex-direction: column;
+    height: 98%;
   }
 
   form {
     border-right: 0;
+  }
+
+  #footer {
+    position: static;
+    height: 2%;
+    margin-bottom: 0.2rem;
   }
 }
